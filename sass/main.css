@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Playfair+Display&family=Poppins:wght@400;700;900&family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F8F6F1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 20px 10%;
+}
+header .nav-menu {
+  display: flex;
+}
+header .nav-menu a {
+  padding: 10px 20px;
+  color: #ffffff;
+  transition: ease-in-out 0.3s;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background-color 0.3s ease-in-out;
+}
+header .nav-menu a:hover {
+  color: #4e411f;
+}
+@media screen and (max-width: 960px) {
+  header .nav-menu a:hover {
+    color: #932325;
+  }
+}
+@media screen and (max-width: 960px) {
+  header .nav-menu li {
+    margin-bottom: 8px;
+    display: block;
+  }
+}
+@media screen and (max-width: 960px) {
+  header .nav-menu {
+    flex-direction: column;
+    top: 100%;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    justify-content: center;
+    background-color: #856E36;
+    display: none;
+    transform: translateY(-200px);
+  }
+  header .nav-menu.active {
+    display: flex;
+  }
+}
+header .logo img {
+  max-width: 160px;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  header .logo img {
+    padding-left: 10px;
+  }
+}
+header .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .button button {
+  border: none;
+  padding: 10px 30px;
+  background-color: #856E36;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 15px;
+}
+header .button button:hover {
+  background-color: #4e411f;
+}
+@media screen and (max-width: 960px) {
+  header .button button {
+    border: none;
+    padding: 10px 30px;
+    background-color: #856E36;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    border-radius: 5px;
+    margin-right: 0;
+  }
+  header .button button:hover {
+    background-color: #4e411f;
+  }
+}
+@media screen and (max-width: 480px) {
+  header .button button {
+    border: none;
+    padding: 5px 15px;
+    background-color: #856E36;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    border-radius: 5px;
+    margin-right: 0;
+    font-size: 14px;
+  }
+  header .button button:hover {
+    background-color: #4e411f;
+  }
+}
+header .button #menu {
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 1001;
+  color: #ffffff;
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  header .button #menu {
+    display: none;
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 960px) {
+  header {
+    padding: 10px 20px 10px 0;
+    transition: 0.3s;
+  }
+}
+
+.home-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 12%;
+  width: 100%;
+  background-image: url("../Rest/blooming-banner.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.home-1 .home-content-1 #home-head {
+  color: #856E36;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+}
+.home-1 .home-content-1 #home-tagline {
+  color: #856E36;
+  margin: 1.5rem 0 0 0;
+  font-size: 1.5rem;
+}
+.home-1 .home-content-1 img {
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .home-1 .home-content-1 img {
+    max-width: 75%;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .home-1 .home-content-1 img {
+    max-width: 100%;
+    width: 65%;
+  }
+}
+
+.footer-section {
+  background-color: #F8F6F1;
+  margin-top: 3rem;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.footer-section #contact {
+  margin-bottom: 3rem;
+  font-weight: 300;
+  font-size: 2rem;
+}
+.footer-section .contact-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 768px) {
+  .footer-section .contact-details {
+    grid-template-columns: 1fr;
+    border: none;
+  }
+}
+.footer-section .contact-details #phone {
+  border-right: 1px solid #856E36;
+}
+@media screen and (max-width: 768px) {
+  .footer-section .contact-details #phone {
+    border: none;
+  }
+}
+.footer-section .contact-details #email {
+  border-left: 1px solid #856E36;
+}
+@media screen and (max-width: 768px) {
+  .footer-section .contact-details #email {
+    border: none;
+  }
+}
+.footer-section .contact-details .contact {
+  flex: 1;
+  padding: 2rem;
+}
+.footer-section .contact-details .contact i {
+  color: #856E36;
+  font-size: 4rem;
+}
+.footer-section .contact-details .contact h1 {
+  font-weight: 400;
+  color: grey;
+  padding-top: 0.5rem;
+  margin-top: 0.6rem;
+}
+.footer-section .contact-details .contact p {
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .footer-section .contact-details .contact {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer-section .contact-details .contact {
+    padding: 1rem;
+  }
+}
+
+footer {
+  padding: 25px 0;
+  background-color: #856E36;
+}/*# sourceMappingURL=main.css.map */
